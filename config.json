@@ -1,0 +1,17 @@
+{
+    "company_name": "KBKNY LLC",
+    "company_address": "269 E 5900 S #3, MURRAY, UT, 84107",
+    "company_contact": "PapyKabukanyi@gmail.com/801-820-0091",
+    "logo_path": "C:/Users/lovingtracktor/Documents/workdev/invoicegen/logo.png",
+    "customer_name": "HEMPIRE ENTERPRISE",
+    "customer_address": "Customer Address",
+    "invoice_date": "2024-07-03",
+    "items": [
+        {"description": "Logo Creation", "Hours": 5, "unit_price": 38},
+        {"description": "N/A", "Hours": 0, "unit_price": 38}
+    ],
+    "paypal": "PapyKabukanyi",
+    "paypal_qr_path": "C:/Users/lovingtracktor/Documents/workdev/invoicegen/paypal_qr.png",
+    "signature": "Your Signature",
+    "merchant_signature": "Merchant Signature"
+}
