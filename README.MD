@@ -5,3 +5,5 @@
 ## invoice are numerally generated 00000001 and going up.
 
 ### this is the ideal solution and cheap solution for very small business or a business that need to payless for small task.
+
+## added front page and html form

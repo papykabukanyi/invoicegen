@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Invoice Generator</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="company_name">Company Name:</label>
+            <input type="text" id="company_name" name="company_name" required>
+            
+            <label for="company_address">Company Address:</label>
+            <input type="text" id="company_address" name="company_address" required>
+            
+            <label for="company_contact">Company Contact:</label>
+            <input type="text" id="company_contact" name="company_contact" required>
+            
+            <label for="logo">Logo (optional):</label>
+            <input type="file" id="logo" name="logo">
+            
+            <label for="customer_name">Customer Name:</label>
+            <input type="text" id="customer_name" name="customer_name" required>
+            
+            <label for="customer_address">Customer Address:</label>
+            <input type="text" id="customer_address" name="customer_address" required>
+            
+            <label for="items">Items:</label>
+            <div id="items">
+                <div class="item">
+                    <input type="text" name="description" placeholder="Description" required>
+                    <input type="number" name="quantity" placeholder="Quantity/Hours" required>
+                    <input type="number" name="unit_price" placeholder="Unit Price" step="0.01" required>
+                </div>
+            </div>
+            <button type="button" onclick="addItem()">Add Item</button>
+            
+            <label for="paypal">CashApp:</label>
+            <input type="text" id="paypal" name="paypal" required>
+            
+            <label for="paypal_qr">PayPal QR Code (optional):</label>
+            <input type="file" id="paypal_qr" name="paypal_qr">
+            
+            <label for="signature">Customer Signature:</label>
+            <input type="text" id="signature" name="signature" required>
+            
+            <label for="merchant_signature">Merchant Signature:</label>
+            <input type="text" id="merchant_signature" name="merchant_signature" required>
+            
+            <button type="submit">Generate Invoice</button>
+        </form>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
